@@ -7,6 +7,11 @@ public class MouseLauncher : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (!Game.IsGameStarted()) // cannot launch w/out game starting
+            return; // early return
+        if (Mouse.current == null)
+            return;
+        
         if (Mouse.current.leftButton.wasPressedThisFrame) // if mouse is clicked
         {
             Launch();
