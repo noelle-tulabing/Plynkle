@@ -367,6 +367,37 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 3262591448755106773, guid: c3613dce3bce54da8b5ca73fa172d9b4, type: 3}
   m_PrefabInstance: {fileID: 32717484}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &59447517
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 59447518}
+  m_Layer: 0
+  m_Name: GunExit
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &59447518
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 59447517}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.07, y: -2.25, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 491463589}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &88520852
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -818,6 +849,8 @@ GameObject:
   - component: {fileID: 491463589}
   - component: {fileID: 491463588}
   - component: {fileID: 491463587}
+  - component: {fileID: 491463591}
+  - component: {fileID: 491463590}
   m_Layer: 0
   m_Name: Gun
   m_TagString: Untagged
@@ -904,13 +937,41 @@ Transform:
   m_GameObject: {fileID: 491463586}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 5, z: 0}
+  m_LocalPosition: {x: 0.07, y: 5, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1039582095}
+  - {fileID: 59447518}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &491463590
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 491463586}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 567fc12dea33047bcbc5727c50191848, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Launcher
+  ProjectilePrefab: {fileID: 3804717502850582678, guid: 28d3051d7b60746b3920be8c60e799cf, type: 3}
+  ProjectileSpawnPoint: {fileID: 59447518}
+--- !u!114 &491463591
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 491463586}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 56a00d64e73384a7f8c23eb2f277b4e1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::MouseLauncher
+  Launcher: {fileID: 491463590}
 --- !u!1001 &509781681
 PrefabInstance:
   m_ObjectHideFlags: 0
