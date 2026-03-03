@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 7526532516761188691}
   m_Layer: 0
   m_Name: Peg
-  m_TagString: Untagged
+  m_TagString: Peg
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -144,3 +144,4 @@ MonoBehaviour:
   - {fileID: 21300000, guid: f64cea3fb80f34d30b5a1e287aa67383, type: 3}
   - {fileID: 21300000, guid: 3c0db0e4a7dc644e9bcad9b055078d28, type: 3}
   - {fileID: 21300000, guid: 2a46cd73193844204b113138c69e113d, type: 3}
+  Sounds: {fileID: 0}
