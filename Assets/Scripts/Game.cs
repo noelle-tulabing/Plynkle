@@ -2,20 +2,19 @@ using UnityEngine;
 
 public class Game : MonoBehaviour
 {
-    public CanvasGroup startMenuCanvasGroup;
+    public UI UI;
     private static bool gameStarted = false;
     
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        CanvasGroupDisplayer.Show(startMenuCanvasGroup);
+        UI.ShowStartScreen();
     }
 
     public void OnStartButtonClick()
     {
-        CanvasGroupDisplayer.Hide(startMenuCanvasGroup);
+        UI.HideStartScreen();
         gameStarted = true;
-        
     }
 
     public static bool IsGameStarted()
