@@ -7,8 +7,10 @@ public class MouseLauncher : MonoBehaviour
     public Sounds Sounds;
     void Update()
     {
-        //if (!Game.IsGameStarted()) // cannot launch w/out game starting
-           // return; // early return
+        if (!Game.IsGameStarted()) // cannot launch w/out game starting
+            return; // early return
+        if (Ball.IsBallInPlay())
+            return;
         if (Mouse.current == null)
             return;
         

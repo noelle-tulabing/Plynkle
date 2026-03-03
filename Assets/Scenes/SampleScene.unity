@@ -1989,7 +1989,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &662775051
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2182,6 +2182,7 @@ GameObject:
   - component: {fileID: 811447349}
   - component: {fileID: 811447351}
   - component: {fileID: 811447350}
+  - component: {fileID: 811447352}
   m_Layer: 5
   m_Name: Panel_GUI
   m_TagString: Untagged
@@ -2247,6 +2248,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 811447348}
   m_CullTransparentMesh: 1
+--- !u!225 &811447352
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 811447348}
+  m_Enabled: 1
+  m_Alpha: 1
+  m_Interactable: 1
+  m_BlocksRaycasts: 1
+  m_IgnoreParentGroups: 0
 --- !u!1 &814464420
 GameObject:
   m_ObjectHideFlags: 0
@@ -3305,6 +3318,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::UI
   ScoreText: {fileID: 1372744794}
   startMenuCanvasGroup: {fileID: 662775054}
+  GUICanvasGroup: {fileID: 811447352}
 --- !u!4 &1254787059
 Transform:
   m_ObjectHideFlags: 0

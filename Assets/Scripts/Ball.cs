@@ -5,10 +5,12 @@ public class Ball : MonoBehaviour
 {
     public AudioClip PegHitClip;
     private AudioSource audioSource;
+    private static bool ballInPlay = false;
 
     public void Awake()
     {
         audioSource = GetComponent<AudioSource>();
+        ballInPlay = true;
     }
 
     public void OnCollisionEnter2D(Collision2D other)
@@ -26,6 +28,15 @@ public class Ball : MonoBehaviour
         {
             Destroy(gameObject);
         }
-      
+    }
+
+    public static bool IsBallInPlay()
+    {
+        return ballInPlay;
+    }
+
+    public void OnDestroy()
+    {
+        ballInPlay = false;
     }
 }
