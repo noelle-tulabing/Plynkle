@@ -4,7 +4,7 @@ using UnityEngine.InputSystem;
 public class MouseLauncher : MonoBehaviour
 {
     public Launcher Launcher;
-    // Update is called once per frame
+    public Sounds Sounds;
     void Update()
     {
         //if (!Game.IsGameStarted()) // cannot launch w/out game starting
@@ -21,7 +21,7 @@ public class MouseLauncher : MonoBehaviour
     private void Launch()
     {
         Vector2 aimDirection = GetAimDirection(); // find direction to aim
-        
+        Sounds.PlayCannonSound();
         Launcher.Launch(aimDirection); // launch in that direction
     }
 
