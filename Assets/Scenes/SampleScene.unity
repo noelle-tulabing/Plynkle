@@ -568,6 +568,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1020157399}
     m_Modifications:
+    - target: {fileID: -4578724779286630822, guid: e428fcb504a5141cda22aca0b955e15f, type: 3}
+      propertyPath: Points
+      value: 20
+      objectReference: {fileID: 0}
     - target: {fileID: 1334241876247854419, guid: e428fcb504a5141cda22aca0b955e15f, type: 3}
       propertyPath: m_Name
       value: SlotCollider5
@@ -1100,6 +1104,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1020157399}
     m_Modifications:
+    - target: {fileID: -4578724779286630822, guid: e428fcb504a5141cda22aca0b955e15f, type: 3}
+      propertyPath: Points
+      value: 20
+      objectReference: {fileID: 0}
     - target: {fileID: 1334241876247854419, guid: e428fcb504a5141cda22aca0b955e15f, type: 3}
       propertyPath: m_Name
       value: SlotCollider2
@@ -2003,6 +2011,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1020157399}
     m_Modifications:
+    - target: {fileID: -4578724779286630822, guid: e428fcb504a5141cda22aca0b955e15f, type: 3}
+      propertyPath: Points
+      value: 50
+      objectReference: {fileID: 0}
     - target: {fileID: 1334241876247854419, guid: e428fcb504a5141cda22aca0b955e15f, type: 3}
       propertyPath: m_Name
       value: SlotCollider4
@@ -4723,6 +4735,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1020157399}
     m_Modifications:
+    - target: {fileID: -4578724779286630822, guid: e428fcb504a5141cda22aca0b955e15f, type: 3}
+      propertyPath: Points
+      value: 50
+      objectReference: {fileID: 0}
     - target: {fileID: 1334241876247854419, guid: e428fcb504a5141cda22aca0b955e15f, type: 3}
       propertyPath: m_Name
       value: SlotCollider3
